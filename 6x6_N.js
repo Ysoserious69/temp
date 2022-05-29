@@ -37,7 +37,7 @@ if(keys.includes(name))
 {
   var value=parseInt(localStorage.getItem(name));
 
-  if(level>value)
+  if(level*10 >value)
   {
     localStorage.setItem(name,String(score));
     }
