@@ -26,23 +26,23 @@ nextRound();
 function nextRound(){
   /*
 var keys=​Object​.​keys​(​localStorage​)​; 
- ​if(keys​.​includes​(​name​)​)​{ 
-var value=parseInt​(​localStorage​.​getItem​(​name​)​)​; 
+ ​if(keys​.​includes​(​Name​)​)​{ 
+var value=parseInt​(​localStorage​.​getItem​(​Name​)​)​; 
 if(score​ ​>​ ​value​)​{
-  localStorage​.​setItem​(​name​,​String​(​score​)​)​;}}
-else{localStorage​.​setItem​(​name​,​String​(​score​)​)​;}
+  localStorage​.​setItem​(​Name​,​String​(​score​)​)​;}}
+else{localStorage​.​setItem​(​Name​,​String​(​score​)​)​;}
 */
 var keys=Object.keys(localStorage);
-if(keys.includes(name))
+if(keys.includes(Name))
 {
-  var value=parseInt(localStorage.getItem(name));
+  var value=parseInt(localStorage.getItem(Name));
 
   if(level*10 >value)
   {
-    localStorage.setItem(name,String(score));
+    localStorage.setItem(Name,String(score));
     }
  
-    else{localStorage.setItem(name,String(score));}
+    else{localStorage.setItem(Name,String(score));}
   
 }
   
