@@ -29,4 +29,4 @@ for(i of scores){
   
   
   
-// ​console​.​log​(​scores​)​;
+​console​.​log​(​scores​)​;
