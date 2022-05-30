@@ -32,20 +32,7 @@ if(score​ ​>​ ​value​)​{
   localStorage​.​setItem​(​name​,​String​(​score​)​)​;}}
 else{localStorage​.​setItem​(​name​,​String​(​score​)​)​;}
 */
-var keys=Object.keys(localStorage);
-if(keys.includes(Name))
-{
-  var value=parseInt(localStorage.getItem(Name));
 
-  if(level>value)
-  {
-    localStorage.setItem(Name,String(level));
-    }
- 
-     
-}
-   else{localStorage.setItem(Name,String(level));}
-  
 if(level==36){console.log("Win!");
 temp=new Array(36).fill(0);}
 level+=1;
@@ -105,6 +92,25 @@ function handleClick(tile){
   if(temp[a1]==1) flag=false; else temp[a1]=1; 
   if(seqflag[a1]!=temp[a1]) flag=false;
   if (!flag){
+    
+    var keys=Object.keys(localStorage);
+if(keys.includes(Name))
+{
+  var value=parseInt(localStorage.getItem(Name));
+
+  if(level>value)
+  {
+    localStorage.setItem(Name,String(level));
+    }
+ 
+     
+}
+   else{localStorage.setItem(Name,String(level));}
+  
+    
+    
+    
+    
     resetGame(`Better luck Next Time! Game over, you pressed the wrong tile/repeated tile,Your Score is ${10*level} `); 
     console.log('You has pressed incorrect tile/ repeated tile henceGame over!');
     return;}
@@ -117,8 +123,11 @@ function handleClick(tile){
 }
 
 function resetGame(text){
+  
+  alert(text);
+//Name=prompt("Please Enter your name");
 seqflag=new Array(36).fill(0);
-alert(text);
+
 computer=[];human=[];
 level=0;
 start.classList.remove('hidden'); 
