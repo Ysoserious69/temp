@@ -4,7 +4,7 @@ var keys=Object.keys(localStorage);
    
    scores.push([parseInt(localStorage.getItem(i)),i]);
  }
- prompt.("Can u see me ,I'm in leaderboard");
+Desh= prompt("Can u see me ,I'm in leaderboard");
 function sortFunction(a,b){
   
   if(a[0]===b[0])
