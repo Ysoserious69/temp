@@ -39,13 +39,12 @@ if(keys.includes(Name))
 
   if(level>value)
   {
-    localStorage.setItem(Name,String(score));
+    localStorage.setItem(Name,String(level));
     }
  
-    else{localStorage.setItem(Name,String(score));}
-  
+     
 }
-  
+   else{localStorage.setItem(Name,String(level));}
   
 if(level==36){console.log("Win!");
 temp=new Array(36).fill(0);}
