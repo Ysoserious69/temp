@@ -9,7 +9,7 @@ const heading=document.querySelector('.js-heading');
 const tileBox=document.querySelector('.js-box');
 
 function startGame(){
-var Name=prompt("Please Enter your name");
+ Name=prompt("Please Enter your name");
 // Now name is stored
 
 const display=document.querySelector('.display');
@@ -26,18 +26,18 @@ nextRound();
 function nextRound(){
   /*
 var keys=​Object​.​keys​(​localStorage​)​; 
- ​if(keys​.​includes​(​Name​)​)​{ 
-var value=parseInt​(​localStorage​.​getItem​(​Name​)​)​; 
+ ​if(keys​.​includes​(​name​)​)​{ 
+var value=parseInt​(​localStorage​.​getItem​(​name​)​)​; 
 if(score​ ​>​ ​value​)​{
-  localStorage​.​setItem​(​Name​,​String​(​score​)​)​;}}
-else{localStorage​.​setItem​(​Name​,​String​(​score​)​)​;}
+  localStorage​.​setItem​(​name​,​String​(​score​)​)​;}}
+else{localStorage​.​setItem​(​name​,​String​(​score​)​)​;}
 */
 var keys=Object.keys(localStorage);
 if(keys.includes(Name))
 {
   var value=parseInt(localStorage.getItem(Name));
 
-  if(level*10 >value)
+  if(level>value)
   {
     localStorage.setItem(Name,String(score));
     }
